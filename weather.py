@@ -6,7 +6,7 @@ import sys
 
 # Read config file
 config = configparser.ConfigParser()
-config.read(f'{sys.argv[1]}/.config/polybar/polybar-weather/config.ini')
+config.read(f'{sys.argv[1]}/config.ini')
 
 dict_weather_group_icon = { 200: '', 300: '', 500: '', 600: '', 700: '', 800: ['', ''], 801: ['', ''], 802: '', 803: '', 804: ''}
 
