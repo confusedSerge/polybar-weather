@@ -30,6 +30,6 @@ if isinstance(weather_icon, list):
 
 # get unit
 unit = str(round(current['temp'])) + '°'
-degree = unit + 'C' if config['OPENWEATHERMAP']['units'] == 'metric' else unit + 'F'
+degree = unit + 'C' if config['OPENWEATHERMAP']['units'] == 'METRIC' else unit + 'F'
 
 print(f'{weather_icon} {degree}')

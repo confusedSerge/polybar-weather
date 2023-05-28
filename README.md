@@ -30,7 +30,7 @@ format-background = ${color.primary}
 
 ```
 
-You can also find the module [here](/weather.ini). Here a short explanation of the module options:
+You can also find the module [here](/module.ini). Here a short explanation of the module options:
 - `exec`: The path to the Python script. If you choose to clone this repository to a different directory, you should change this paths accordingly.
 - `interval`: The interval in seconds in which the module should update the weather data. Currently, I recommend to set this to 900 seconds (15 minutes), to not overload the OpenWeatherMap API.
 - Other options are basic formatting options and can be changed to your liking, so that it fits your Polybar configuration.
