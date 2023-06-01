@@ -2,7 +2,7 @@
 
 ![Weather Module](/other/images/weather-module.png)
 
-A small and simple weather module for Polybar, written in Python and using the [OpenWeatherMap API](https://openweathermap.org/api) to fetch weather data.
+A small and simple weather module for Polybar, written in Python and using the [OpenWeatherMap API](https://openweathermap.org/api) to fetch weather data, so that you can double check the weather you see outside your window.
 
 ## Dependencies
 
@@ -46,4 +46,4 @@ The module can be configured by editing the `config.ini` file. The file contains
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](/LICENSE.md) file for details. Note that this only applies to my code. The modules I use are licensed under their respective licenses.
+This project is licensed under the MIT License - see the [LICENSE.md](/LICENSE.md) file for details. Note that this only extends to my code and other modules, fonts, etc. are licensed under their respective licenses and do not fall under this license. If you find any license violations, please contact me immediately, as this is not intended.
