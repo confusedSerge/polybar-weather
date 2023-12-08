@@ -14,7 +14,7 @@ The module also uses the following fonts:
 
 ## Installation
 
-Clone the repository to your polybar configuation directory, which is usually located at `~/.config/polybar/`.
+Clone the repository to your polybar configuration directory, which is usually located at `~/.config/polybar/`.
 After that, you should add a new module to your Polybar configuration file, which is usually located at `~/.config/polybar/config`. The module should look like this:
 
 ```
