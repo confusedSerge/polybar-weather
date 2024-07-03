@@ -50,7 +50,7 @@ if isinstance(weather_icon, int):
 if isinstance(weather_icon, list):
     weather_icon = (
         weather_icon[0]
-        if current["sunrise"] < current["dt"] < current["sunset"]
+        if current["sys"]["sunrise"] < current["dt"] < current["sys"]["sunset"]
         else weather_icon[1]
     )
 
