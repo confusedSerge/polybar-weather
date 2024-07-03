@@ -35,6 +35,10 @@ except:
     print("")
     exit()
 
+if current["cod"] != 200:
+    print("")
+    exit()
+
 # get weather icon
 weather_id = current["weather"][0]["id"]
 weather_icon = dict_weather_group_icon.get(weather_id, (weather_id // 100) * 100)
