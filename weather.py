@@ -1,4 +1,3 @@
-import os
 import configparser
 import requests
 
@@ -21,7 +20,7 @@ dict_weather_group_icon = {
     804: "",
 }
 
-URL = "http://api.openweathermap.org/data/2.5/onecall?lat={}&lon={}&units={}&exclude=minutely,hourly,daily,alerts&appid={}"
+URL = "https://api.openweathermap.org/data/2.5/weather?lat={}&lon={}&units={}&exclude=minutely,hourly,daily,alerts&appid={}"
 url_formated = URL.format(
     config["OPENWEATHERMAP"]["lat"],
     config["OPENWEATHERMAP"]["lon"],
@@ -31,11 +30,10 @@ url_formated = URL.format(
 
 # get data
 try:
-    json_answer = requests.get(url_formated).json()
+    current = requests.get(url_formated).json()
 except:
     print("")
     exit()
-current = json_answer["current"]
 
 # get weather icon
 weather_id = current["weather"][0]["id"]
@@ -53,7 +51,7 @@ if isinstance(weather_icon, list):
     )
 
 # get unit
-unit = str(round(current["temp"])) + "°"
+unit = str(round(current["main"]["temp"])) + "°"
 degree = unit + "C" if config["OPENWEATHERMAP"]["units"] == "METRIC" else unit + "F"
 
 print(f"{weather_icon} {degree}")
