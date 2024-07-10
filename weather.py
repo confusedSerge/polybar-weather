@@ -21,7 +21,7 @@ dict_weather_group_icon = {
 }
 
 URL = "https://api.openweathermap.org/data/2.5/weather?lat={}&lon={}&units={}&exclude=minutely,hourly,daily,alerts&appid={}"
-url_formated = URL.format(
+url_formatted = URL.format(
     config["OPENWEATHERMAP"]["lat"],
     config["OPENWEATHERMAP"]["lon"],
     config["OPENWEATHERMAP"]["units"],
@@ -30,7 +30,7 @@ url_formated = URL.format(
 
 # get data
 try:
-    current = requests.get(url_formated).json()
+    current = requests.get(url_formatted).json()
 except:
     print("")
     exit()
